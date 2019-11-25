@@ -786,6 +786,11 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
+http@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/http/-/http-0.0.0.tgz#86e6326d29c5d039de9fac584a45689f929f4f72"
+  integrity sha1-huYybSnF0Dnen6xYSkVon5KfT3I=
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -1071,6 +1076,11 @@ mkdirp@^0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mogoose@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/mogoose/-/mogoose-0.0.1-security.tgz#2f9989ff49f11b43dc18436c237c7688caa08fa2"
+  integrity sha512-TX97LVQnLr7jzee6nRZlKKS1XXC/Xp2M5OE2Vz7L/e3mkPMupVfuG4A5tIFFNeClFJ+LH/A0bsqekZolAPOIuA==
 
 mongodb@3.3.4:
   version "3.3.4"
