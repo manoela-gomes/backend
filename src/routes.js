@@ -9,7 +9,7 @@ const LoginController = require("./controllers/LoginController");
 })*/
 // GET/PUT/DELETE/POST
 
-routes.post("https://app-preditor-etiologia.herokuapp.com/login", LoginController.store);
+routes.post("/login", LoginController.store);
 
 module.exports = routes;
 
