@@ -1,5 +1,7 @@
-const express = require("express");
-const cors = require('cors');
+var express = require('express'),
+    cors = require('cors'),
+    app = express();
+
 const routes = express.Router();
 const mongoose = require("mongoose");
 const LoginController = require("./controllers/LoginController");
@@ -11,11 +13,9 @@ const LoginController = require("./controllers/LoginController");
 
 Tente adicionar em seu servidor node.js o módulo cors. E tente adicioná-lo desta forma:
 
-var express = require('express'),
-    cors = require('cors'),
-    app = express();
-
-app.use(cors());
+var corsOptions = {
+    origin: '*'
+};
 
 routes.post("/login", LoginController.store);
 
