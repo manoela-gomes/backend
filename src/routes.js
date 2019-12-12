@@ -11,8 +11,6 @@ const LoginController = require("./controllers/LoginController");
 })*/
 // GET/PUT/DELETE/POST
 
-Tente adicionar em seu servidor node.js o módulo cors. E tente adicioná-lo desta forma:
-
 var corsOptions = {
     origin: '*'
 };
