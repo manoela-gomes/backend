@@ -28,4 +28,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(require('./routes').default);
 
-server.listen(process.env.PORT||3333);
+server.listen(process.env.PORT || 3333);
