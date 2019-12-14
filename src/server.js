@@ -14,7 +14,7 @@ socket.on('connectRoom', login => {
 });
 
 io.on("connection", socket => {
-    socket.on('connectRoom', login => { 
+    socket.on('connectRoom', acesso => { 
         socket.join(acesso);
         })
     });
