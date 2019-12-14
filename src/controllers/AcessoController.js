@@ -15,4 +15,4 @@ class AcessoController{
 
 }
 
-module.exports = new LoginController();
+module.exports = new Acesso.Controller();
