@@ -13,6 +13,12 @@ socket.on('connectRoom', login => {
     })
 });
 
+io.on("connection", socket => {
+    socket.on('connectRoom', login => { 
+        socket.join(acesso);
+        })
+    });
+    
 mongoose.connect("mongodb+srv://app-manu:himalaia@cluster0-tzgfq.mongodb.net/test?retryWrites=true&w=majority",
 {   useUnifiedTopology: true,
     useNewUrlParser:true

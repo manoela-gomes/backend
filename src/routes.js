@@ -5,6 +5,7 @@ var express = require('express'),
 const routes = express.Router();
 const mongoose = require("mongoose");
 const LoginController = require("./controllers/LoginController");
+const AcessoController = require("./controllers/AcessoController");
 
 /*routes.get('/teste',(req,res) => {
     return res.send('Hello World - testing again!');
@@ -16,6 +17,7 @@ var corsOptions = {
 };
 
 routes.post("/login", LoginController.store);
+routes.get("/acesso", AcessoController.store);
 
 module.exports = routes;
 
