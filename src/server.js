@@ -34,4 +34,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(require('./routes'));
 
-server.listen(process.env.PORT || 3333);
+const host = '0.0.0.0';
+const port = process.env.PORT || 3333
+server.listen(port,host);
