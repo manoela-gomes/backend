@@ -12,12 +12,6 @@ socket.on('connectRoom', login => {
     socket.join(login);
     })
 });
-
-io.on("connection", socket => {
-    socket.on('connectRoom', acesso => { 
-        socket.join(acesso);
-        })
-    });
     
 mongoose.connect("mongodb+srv://app-manu:himalaia@cluster0-tzgfq.mongodb.net/test?retryWrites=true&w=majority",
 {   useUnifiedTopology: true,
@@ -35,5 +29,5 @@ app.use(express.urlencoded({extended:true}));
 app.use(require('./routes'));
 
 const host = '0.0.0.0';
-const port = process.env.PORT || 3333
+const port = process.env.PORT || 3333;
 server.listen(port,host);
