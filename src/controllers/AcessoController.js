@@ -7,7 +7,7 @@ class AcessoController{
 
     async store(req,res){
         
-        const acesso = await Acesso.findOne();
+        const acesso = await Acesso.findOne({},{});
         return res.json(acesso);
 
         //req.io.sockets.in(login)
