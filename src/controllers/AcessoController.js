@@ -15,9 +15,3 @@ class AcessoController{
     }
 
 }
-
-module.exports = new AcessoController();
-db.bios.findOne(
-    { contribs: 'OOP' },
-    { _id: 0, 'name.first': 0, birth: 0 }
- )
