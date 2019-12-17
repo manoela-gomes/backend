@@ -13,3 +13,5 @@ class AcessoController{
     }
 
 }
+
+module.exports = new AcessoController()
