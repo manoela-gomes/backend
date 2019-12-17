@@ -9,7 +9,7 @@ class AcessoController{
         //return res.json(acesso);
         //req.io.sockets.in(login)
         response = await Login.findOne({login:req.body.login},{ login: 1, password: 1});
-        res.send(response);
+        res.json(response);
     }
 
 }
