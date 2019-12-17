@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const Login = require("../models/Login");
 
 class LoginController{
@@ -7,7 +6,7 @@ class LoginController{
 
         const login_create = await Login.create({login:req.body.login, password:req.body.password});
         return res.json(login_create);
-
+        
         //req.io.sockets.in(login)
     }
 
