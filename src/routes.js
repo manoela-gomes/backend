@@ -16,6 +16,5 @@ var corsOptions = {
 };
 
 routes.post("/login", LoginController.store);
-routes.get("/acesso", AcessoController.store);
+routes.get("/acesso/login/:login", AcessoController.store);
 module.exports = routes;
-
