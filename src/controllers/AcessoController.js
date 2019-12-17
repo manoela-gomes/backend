@@ -5,9 +5,11 @@ class AcessoController{
 
     async store(req,res){
         
-        const acesso = await Login.findOne({login:req.params.login},{ login: 1, password: 1});
-        return res.json(acesso);
+       //const acesso = await Login.findOne({login:req.params.login},{ login: 1, password: 1});
+        //return res.json(acesso);
         //req.io.sockets.in(login)
+        response = await Login.findOne({login:req.params.login},{ login: 1, password: 1});
+        res.send(JSON.stringify(response));
     }
 
 }
