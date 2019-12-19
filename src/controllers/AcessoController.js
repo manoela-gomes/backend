@@ -8,7 +8,7 @@ class AcessoController{
        //const acesso = await Login.findOne({login:req.params.login},{ login: 1, password: 1});
         //return res.json(acesso);
         //req.io.sockets.in(login)
-        const user = await Login.findOne({login:req.body.login},{login:1, password:1});
+        const user = await Login.findOne({`login:${req.body.login}`},{});
         return res.json(user.password === req.body.password);
     }
 
