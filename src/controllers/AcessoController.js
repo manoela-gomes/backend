@@ -1,9 +1,9 @@
-const Login= require("../models/Login");
+const Login = require("../models/Login");
 
 
 class AcessoController{
 
-     store(req,res){
+   async store(req,res){
         
        //const acesso = await Login.findOne({login:req.params.login},{ login: 1, password: 1});
         //return res.json(acesso);
