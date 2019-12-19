@@ -12,7 +12,7 @@ socket.on('connectRoom', login => {
     socket.join(login);
     })
 });
-    
+
 mongoose.connect("mongodb+srv://app-manu:himalaia@cluster0-tzgfq.mongodb.net/test?retryWrites=true&w=majority",
 {   useUnifiedTopology: true,
     useNewUrlParser:true
@@ -28,6 +28,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(require('./routes'));
 
-
-
-server.listen(process.env.PORT || 3333 );
+server.listen(process.env.PORT || 3333);
